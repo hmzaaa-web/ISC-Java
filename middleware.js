@@ -16,42 +16,42 @@ export function middleware(request) {
     'scrapy', 'sucker', 'ia_archiver', 'archive.org_bot', 'wayback'
   ];
 
-  const lowerUA = userAgent.toLowerCase();
-  if (blockedAgents.some(agent => lowerUA.includes(agent))) {
-    return new Response('Access Denied', { status: 403 });
-  }
+  // const lowerUA = userAgent.toLowerCase();
+  // if (blockedAgents.some(agent => lowerUA.includes(agent))) {
+  //   return new Response('Access Denied', { status: 403 });
+  // }
 
-  // Block requests with completely empty user agent (often bots)
-  if (!userAgent || userAgent.trim() === '') {
-    return new Response('Access Denied', { status: 403 });
-  }
+  // // Block requests with completely empty user agent (often bots)
+  // if (!userAgent || userAgent.trim() === '') {
+  //   return new Response('Access Denied', { status: 403 });
+  // }
 
   // ---------------------------------------------------------------
   // 2. Prevent image hotlinking (Referer‑based)
   // ---------------------------------------------------------------
-  const protectedExtensions = /\.(jpg|jpeg|png|gif|webp|avif|svg|ico|bmp|tiff)$/i;
-  if (protectedExtensions.test(url.pathname)) {
-    const allowedReferers = [
-      'iscjava.vercel.app',
-      'www.iscjava.vercel.app',
-      'localhost'
-    ];
+  // const protectedExtensions = /\.(jpg|jpeg|png|gif|webp|avif|svg|ico|bmp|tiff)$/i;
+  // if (protectedExtensions.test(url.pathname)) {
+  //   const allowedReferers = [
+  //     'iscjava.vercel.app',
+  //     'www.iscjava.vercel.app',
+  //     'localhost'
+  //   ];
 
-    let refererHost = '';
-    try {
-      if (referer) {
-        refererHost = new URL(referer).hostname;
-      }
-    } catch (e) {
-      // Malformed referer – block it
-      return new Response('Hotlinking not allowed', { status: 403 });
-    }
+  //   let refererHost = '';
+  //   try {
+  //     if (referer) {
+  //       refererHost = new URL(referer).hostname;
+  //     }
+  //   } catch (e) {
+  //     // Malformed referer – block it
+  //     return new Response('Hotlinking not allowed', { status: 403 });
+  //   }
 
-    // Allow if referer is empty (direct access) or from allowed domain
-    if (refererHost && !allowedReferers.some(allowed => refererHost.includes(allowed))) {
-      return new Response('Hotlinking not allowed', { status: 403 });
-    }
-  }
+  //   // Allow if referer is empty (direct access) or from allowed domain
+  //   if (refererHost && !allowedReferers.some(allowed => refererHost.includes(allowed))) {
+  //     return new Response('Hotlinking not allowed', { status: 403 });
+  //   }
+  // }
 
   // ---------------------------------------------------------------
   // 3. Block suspicious query parameters (prevent forced downloads)

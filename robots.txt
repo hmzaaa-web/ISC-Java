@@ -1,0 +1,28 @@
+# ISC Java - Robots Exclusion File
+# https://iscjava.online/robots.txt
+# Last updated: 2025-04-13
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://iscjava.online/sitemap.xml
+
+# Crawl-delay (optional; adjust if server load becomes an issue)
+# Crawl-delay: 5
+
+# Disallow admin/private areas (none currently, but good practice)
+Disallow: /assets/pdfs/private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Allow search engines to crawl all static assets
+Allow: /assets/
+Allow: /assets/pdfs/
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Prevent crawling of certain file types if needed (optional)
+# Disallow: /*.inc$
+# Disallow: /*.log$

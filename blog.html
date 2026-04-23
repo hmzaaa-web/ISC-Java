@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>ISC Java | Java Blog — ICSE/ISC Programming Articles</title>
+    <meta name="description" content="Read in‑depth Java articles, exam tips, and programming guides written for ICSE and ISC students. Master OOP, loops, arrays, and more." />
+    <meta name="keywords" content="Java blog, ICSE Java articles, ISC Java tutorials, OOP concepts, Java loops, arrays in Java, exam tips, Java programming, Rishikesh Sahani blog" />
+    <meta name="author" content="Rishikesh Sahani" />
+    <link rel="canonical" href="https://iscjava.online/blog.html" />
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iscjava.online/blog.html" />
+    <meta property="og:title" content="ISC Java Blog — Articles for ICSE & ISC Students" />
+    <meta property="og:description" content="Explore articles on Java basics, OOP, loops, arrays, and exam strategies. Written by an experienced teacher." />
+    <meta property="og:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ISC Java" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://iscjava.online/blog.html" />
+    <meta name="twitter:title" content="ISC Java Blog" />
+    <meta name="twitter:description" content="Java programming articles, exam tips, and deep dives for ICSE and ISC students." />
+    <meta name="twitter:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon for various platforms and sizes -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body class="page-transition">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-card">
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">notes</span>
+            <span class="word">projects</span>
+            <span class="word">solutions</span>
+            <span class="word">papers</span>
+            <span class="word">notes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="https://iscjava.online" class="nav-logo">
+        <img src="assets/img/java-logo.png" alt="Java logo" class="logo-icon-img">
+        <div class="logo-text">ISC <span>Java</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://iscjava.online"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="classes.html" class="nav-link">Classes</a></li>
+        <li><a href="blog.html"    class="nav-link active">Blog</a></li>
+        <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="nav-yt-btn" aria-label="YouTube Channel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Ask a Doubt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-nav">
+      <a href="https://iscjava.online"   class="nav-link">Home</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="blog.html"    class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link" style="color:var(--accent)">Ask a Doubt →</a>
+      <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-mobile-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="blog-hero-sm">
+      <div style="position:relative;z-index:1;text-align:center;">
+        <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px;">Learn. Code. Grow.</p>
+        <h1 style="font-size:clamp(34px,5vw,56px);font-weight:800;color:var(--white);margin-bottom:16px;">The ISC <a style="color: var(--accent);">Java</a> Blog</h1>
+        <p style="font-size:17px;color:rgba(255,255,255,.65);max-width:500px;margin:0 auto;">Articles on Java programming, exam strategies and concept deep-dives — written for school students.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-inner">
+
+        <!-- Filter Bar -->
+        <div class="blog-filter-bar">
+          <button class="filter-pill active">All Posts</button>
+          <button class="filter-pill">Java Basics</button>
+          <button class="filter-pill">OOP</button>
+          <button class="filter-pill">Loops</button>
+          <button class="filter-pill">Arrays</button>
+          <button class="filter-pill">ISC Class 11</button>
+          <button class="filter-pill">Exam Tips</button>
+        </div>
+
+        <!-- Featured Post -->
+        <a href="blog-post.html" class="blog-featured reveal">
+          <div class="blog-featured-thumb" style="background: none; padding: 0;">
+            <img src="assets/img/blog-1.png" alt="OOP in Java" class="featured-img">
+          </div>
+          <div class="blog-featured-body">
+            <span class="blog-tag">✨ Featured</span>
+            <h2>Understanding OOP in Java: A Complete Guide for Class 10 Students</h2>
+            <div class="blog-card-meta">
+              <span class="date">April 5, 2025</span>
+              <span class="read-time">8 min read</span>
+            </div>
+            <p>Object-Oriented Programming can seem intimidating when you first encounter it. But once you understand the core ideas — classes, objects, encapsulation, inheritance and polymorphism — everything clicks into place. This guide breaks it all down with real-world analogies.</p>
+            <span class="btn-primary" style="width:fit-content;">Read Article →</span>
+          </div>
+        </a>
+
+        <!-- Blog Grid (visible cards: first 6) -->
+        <div class="blog-grid" id="blogGridContainer">
+          <!-- Card 1 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#f58025,#e76f00);">
+                <img src="assets/img/blog-2.png" alt="Nested Loops" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Loops</span>
+              <h3 class="blog-card-title"><a href="404.html">Nested Loops &amp; Pattern Programs: Master the Most Asked Questions</a></h3>
+              <p class="blog-card-desc">Triangle, diamond and hourglass patterns with a visual step-by-step walkthrough.</p>
+              <div class="blog-card-meta"><span class="date">March 22, 2025</span><span class="read-time">6 min read</span></div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#122b4a,#1e4368);">
+                <img src="assets/img/blog-3.png" alt="Arrays in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Arrays</span>
+              <h3 class="blog-card-title"><a href="404.html">Arrays in Java: Single &amp; Multi-Dimensional with Solved Programs</a></h3>
+              <p class="blog-card-desc">Declare, initialise and manipulate arrays — complete with solved ISC exam problems.</p>
+              <div class="blog-card-meta"><span class="date">March 10, 2025</span><span class="read-time">7 min read</span></div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#2d5a87,#3a6fa0);">
+                <img src="assets/img/blog-4.png" alt="Strings in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Strings</span>
+              <h3 class="blog-card-title"><a href="404.html">String Methods Every ICSE Student Should Know</a></h3>
+              <p class="blog-card-desc">length(), charAt(), substring(), indexOf(), toUpperCase() and more — with examples.</p>
+              <div class="blog-card-meta"><span class="date">Feb 28, 2025</span><span class="read-time">5 min read</span></div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#1a3d6b,#2a5580);">
+                <img src="assets/img/blog-5.png" alt="Inheritance in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">ISC Class 11</span>
+              <h3 class="blog-card-title"><a href="404.html">Inheritance in Java: super, extends and Method Overriding</a></h3>
+              <p class="blog-card-desc">A clear walkthrough of single and multilevel inheritance with full code examples.</p>
+              <div class="blog-card-meta"><span class="date">Feb 15, 2025</span><span class="read-time">9 min read</span></div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#0d2240,#1e3a5f);">
+                <img src="assets/img/blog-6.png" alt="Exam Tips" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Exam Tips</span>
+              <h3 class="blog-card-title"><a href="404.html">How to Write Perfect Java Programs in Your ICSE Board Exam</a></h3>
+              <p class="blog-card-desc">Formatting tips, common mistakes to avoid, and the examiner's expectations — all in one guide.</p>
+              <div class="blog-card-meta"><span class="date">Jan 30, 2025</span><span class="read-time">4 min read</span></div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#3a6fa0,#2d5a87);">
+                <img src="assets/img/blog-7.png" alt="Data Types in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Java Basics</span>
+              <h3 class="blog-card-title"><a href="404.html">Understanding Data Types, Variables and Type Casting in Java</a></h3>
+              <p class="blog-card-desc">int, float, char, boolean — when to use each, and how implicit vs explicit casting works.</p>
+              <div class="blog-card-meta"><span class="date">Jan 12, 2025</span><span class="read-time">6 min read</span></div>
+            </div>
+          </div>
+
+          <!-- Hidden cards (will be shown by "Load More") -->
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#f58025,#e76f00);">
+                <img src="assets/img/blog-8.png" alt="Nested Loops" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">OOP</span>
+              <h3 class="blog-card-title"><a href="404.html">Polymorphism Explained: Overloading vs Overriding</a></h3>
+              <p class="blog-card-desc">Clear examples of compile-time and runtime polymorphism for ICSE/ISC exams.</p>
+              <div class="blog-card-meta"><span class="date">Jan 5, 2025</span><span class="read-time">7 min read</span></div>
+            </div>
+          </div>
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#122b4a,#1e4368);">
+                <img src="assets/img/blog-9.png" alt="Arrays in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">File Handling</span>
+              <h3 class="blog-card-title"><a href="404.html">FileReader and BufferedReader in Java</a></h3>
+              <p class="blog-card-desc">Reading text files line by line — a must-know for ISC Class 12.</p>
+              <div class="blog-card-meta"><span class="date">Dec 18, 2024</span><span class="read-time">5 min read</span></div>
+            </div>
+          </div>
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#2d5a87,#3a6fa0);">
+                <img src="assets/img/blog-10.png" alt="Recursion" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Recursion</span>
+              <h3 class="blog-card-title"><a href="404.html">Recursion Made Simple: Base Cases and Stack Frames</a></h3>
+              <p class="blog-card-desc">Understand how recursion works with factorial, Fibonacci and binary search examples.</p>
+              <div class="blog-card-meta"><span class="date">Dec 2, 2024</span><span class="read-time">8 min read</span></div>
+            </div>
+          </div>
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#1a3d6b,#2a5580);">
+                <img src="assets/img/blog-11.png" alt="Inheritance in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Inheritance</span>
+              <h3 class="blog-card-title"><a href="404.html">Understanding Inheritance in Java</a></h3>
+              <p class="blog-card-desc">Learn how to create child classes that inherit properties and methods from parent classes.</p>
+              <div class="blog-card-meta"><span class="date">Nov 15, 2024</span><span class="read-time">6 min read</span></div>
+            </div>
+          </div>
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#0d2240,#1e3a5f);">
+                <img src="assets/img/blog-12.png" alt="Exam Tips" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Study Tips</span>
+              <h3 class="blog-card-title"><a href="404.html">How to Prepare for Computer Applications Board Exam</a></h3>
+              <p class="blog-card-desc">Time management, important chapters, and revision strategies.</p>
+              <div class="blog-card-meta"><span class="date">Oct 30, 2024</span><span class="read-time">5 min read</span></div>
+            </div>
+          </div>
+          <div class="blog-card reveal hidden-card">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#3a6fa0,#2d5a87);">
+                <img src="assets/img/blog-13.png" alt="Data Types in Java" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Data Types</span>
+              <h3 class="blog-card-title"><a href="404.html">Understanding Data Types in Java</a></h3>
+              <p class="blog-card-desc">Learn about primitive and reference data types in Java.</p>
+              <div class="blog-card-meta"><span class="date">Oct 10, 2024</span><span class="read-time">9 min read</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div style="text-align:center;margin-top:56px;">
+          <button id="loadMoreBtn" class="btn-outline" style="margin:0 auto;">Load More Articles</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-top:0">
+      <div class="section-inner">
+        <div style="background:linear-gradient(135deg,var(--primary) 0%,var(--primary-mid) 100%);border-radius:32px;padding:64px 48px;text-align:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(245,128,37,.15) 0%,transparent 70%);top:-150px;right:-100px;pointer-events:none;"></div>
+          <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;position:relative;z-index:1;">Got a question about a concept?</p>
+          <h2 style="font-size:clamp(26px,3.5vw,40px);font-weight:800;color:var(--white);margin-bottom:16px;position:relative;z-index:1;">Ask your doubt directly</h2>
+          <p style="font-size:16px;color:rgba(255,255,255,.65);max-width:440px;margin:0 auto 36px;position:relative;z-index:1;">If a blog didn't answer your question, send it directly to get a personalised answer.</p>
+          <a href="contact.html" class="btn-primary" style="font-size:16px;padding:16px 40px;position:relative;z-index:1;">Ask a Doubt →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo nav-logo" style="margin-bottom:16px;">
+            <img src="assets/img/java-logo.png" alt="ISC Java" class="logo-icon">
+            <div class="logo-text" style="color:var(--white);">ISC <span>Java</span></div>
+          </div>
+          <p>Your complete Computer Applications companion for ICSE &amp; ISC. Quality content, structured learning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Classes</h5>
+          <ul>
+            <li><a href="classes.html#class9">Class 9</a></li>
+            <li><a href="classes.html#class10">Class 10</a></li>
+            <li><a href="classes.html#class11">Class 11</a></li>
+            <li><a href="classes.html#class12">Class 12</a></li>
+            <li><a href="classes.html#lab">Lab Manual</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="https://iscjava.online">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="contact.html">Ask a Doubt</a></li>
+            <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Board</h5>
+          <ul>
+            <li><a href="/assets/pdfs/resources/ICSE_Syllabus.pdf" target="_blank">ICSE Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/ISC_Syllabus.pdf" target="_blank">ISC Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_10.pdf" target="_blank">Specimen X</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_12.pdf" target="_blank">Specimen XII</a></li>
+            <li><a href="/assets/pdfs/resources/Sample_Paper.pdf" target="_blank">Sample Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ISC Java. All rights reserved.</span>
+        <span>Made for Rishikesh Sahani Sir</span>
+      </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+
+    <!-- Floating YouTube Button -->
+    <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-float" aria-label="YouTube Channel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="rgba(255,255,255,0.9)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <span class="yt-label">YouTube</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta -->
+    <title>ISC Java — Computer Applications for ICSE & ISC</title>
+    <meta name="description" content="Master Java for ICSE (9-10) and ISC (11-12) with workbook solutions, chapter notes, projects and exam-ready resources curated by an expert teacher." />
+    <meta name="keywords" content="ISC Java, ICSE Java, Computer Applications, ICSE Class 10 Java, ISC Class 11 Java, ISC Class 12 Java, Java workbook solutions, Java notes, Java projects, ICSE board, ISC board, Java programming, OOP, Rishikesh Sahani" />
+    <meta name="author" content="Rishikesh Sahani" />
+    <link rel="canonical" href="https://iscjava.online/index.html" />
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iscjava.online/index.html" />
+    <meta property="og:title" content="ISC Java — Computer Applications for ICSE & ISC" />
+    <meta property="og:description" content="Your complete companion for Computer Applications: workbook solutions, notes, projects and exam guidance for Classes 9 to 12." />
+    <meta property="og:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ISC Java" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://iscjava.online/index.html" />
+    <meta name="twitter:title" content="ISC Java — Computer Applications for ICSE & ISC" />
+    <meta name="twitter:description" content="Workbook solutions, notes and projects for ICSE/ISC Computer Applications. Start mastering Java today." />
+    <meta name="twitter:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon links for various devices and platforms -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body class="page-transition">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-card">
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">notes</span>
+            <span class="word">projects</span>
+            <span class="word">solutions</span>
+            <span class="word">papers</span>
+            <span class="word">notes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Navbar ────────────────────────────────────────── -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <a href="https://iscjava.online" class="nav-logo">
+        <img src="assets/img/java-logo.png" alt="Java logo" class="logo-icon-img">
+        <div class="logo-text">ISC <span>Java</span></div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="https://iscjava.online"   class="nav-link active">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="classes.html" class="nav-link">Classes</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="nav-yt-btn" aria-label="YouTube Channel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Ask a Doubt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" role="navigation" aria-label="Mobile menu">
+      <a href="https://iscjava.online"   class="nav-link">Home</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="blog.html"    class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link" style="color:var(--accent)">Ask a Doubt →</a>
+      <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-mobile-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+
+    <!-- ── Hero ──────────────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="hero-content">
+        <!-- Left -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            ICSE &amp; ISC Board · Classes 9–12
+          </div>
+          <h1>Master <span class="accent">Java</span><br>Programming.</h1>
+          <p class="subtitle">
+            Your complete online companion for Computer Applications — workbook solutions, project and exam-ready notes, curated by your expert teacher.
+          </p>
+          <div class="hero-actions">
+            <a href="classes.html" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              Browse Classes
+            </a>
+            <a href="contact.html" class="btn-secondary">Ask a Doubt</a>
+          </div>
+        </div>
+
+        <!-- Right — Code Card -->
+        <div class="hero-visual">
+          <div class="float-badge float-badge-1">📚 Class 9, 10, 11 &amp; 12</div>
+          <div class="hero-code-card">
+            <div class="code-header">
+              <div class="code-dot red"></div>
+              <div class="code-dot yellow"></div>
+              <div class="code-dot green"></div>
+              <span class="code-file">HelloWorld.java</span>
+            </div>
+            <div class="code-content">
+              <span class="code-line"><span class="c-keyword">public class</span> <span class="c-class">HelloWorld</span> <span class="c-bracket">{</span></span>
+              <span class="code-line">&nbsp;&nbsp;<span class="c-keyword">public static void</span> <span class="c-method">main</span><span class="c-bracket">(</span><span class="c-class">String</span>[] args<span class="c-bracket">) {</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-comment">// Your first Java program</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;System.out.<span class="c-method">println</span><span class="c-bracket">(</span><span class="c-string">"Hello, World!"</span><span class="c-bracket">)</span>;</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">int</span> score = <span class="c-num">100</span>;</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">if</span><span class="c-bracket">(</span>score == <span class="c-num">100</span><span class="c-bracket">) {</span></span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.<span class="c-method">println</span><span class="c-bracket">(</span><span class="c-string">"Perfect Score!"</span><span class="c-bracket">)</span>;</span>
+              <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-bracket">}</span></span>
+              <span class="code-line">&nbsp;&nbsp;<span class="c-bracket">}</span></span>
+              <span class="code-line"><span class="c-bracket">}</span></span>
+            </div>
+          </div>
+          <div class="float-badge float-badge-2">🏆 ICSE Board Ready</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats Bar ──────────────────────────────────────── -->
+    <div class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="num"><span data-counter="4" data-suffix="+"></span></div>
+          <div class="label">Classes Covered</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="num"><span data-counter="40" data-suffix="+"></span></div>
+          <div class="label">Chapter Solutions</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="num"><span data-counter="100" data-suffix="%"></span></div>
+          <div class="label">Syllabus Coverage</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="num"><span data-counter="450" data-suffix="+"></span></div>
+          <div class="label">Students Helped</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Quick Access Cards ─────────────────────────────── -->
+    <section class="section" aria-label="Classes">
+      <div class="section-inner">
+        <p class="section-label">Explore by Class</p>
+        <h2 class="section-title">Choose Your Class</h2>
+        <p class="section-subtitle">Complete chapter-wise workbook solutions, project files and study notes for every class, structured for the ICSE/ISC syllabus.</p>
+
+        <div class="class-cards-grid">
+
+          <!-- Class 9 -->
+          <div class="class-card reveal">
+            <div class="class-card-top">
+              <div class="class-card-number">9</div>
+              <div class="class-card-badge">Class 9</div>
+              <h3 class="class-card-title">Java<br>Foundations</h3>
+              <p class="class-card-subtitle">ICSE Curriculum</p>
+            </div>
+            <div class="class-card-body">
+              <div class="class-card-chapters">
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 1: Introduction to Java</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 2: Elementary Concepts</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">+ 8 more chapters</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+              </div>
+              <div class="class-card-footer">
+                <span class="class-card-meta"><strong>10</strong> Chapters</span>
+                <a href="classes.html#class9" class="btn-primary" style="padding:10px 22px;font-size:13px;">View All →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 10 -->
+          <div class="class-card reveal" style="transition-delay:.1s">
+            <div class="class-card-top" style="background:linear-gradient(135deg,#1a3d6b 0%,#2a5580 100%)">
+              <div class="class-card-number">10</div>
+              <div class="class-card-badge">Class 10</div>
+              <h3 class="class-card-title">Java<br>Intermediate</h3>
+              <p class="class-card-subtitle">ICSE Curriculum</p>
+            </div>
+            <div class="class-card-body">
+              <div class="class-card-chapters">
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 1: Classes in Java</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 2: Arrays &amp; Strings</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">+ 9 more chapters</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+              </div>
+              <div class="class-card-footer">
+                <span class="class-card-meta"><strong>11</strong> Chapters</span>
+                <a href="classes.html#class10" class="btn-primary" style="padding:10px 22px;font-size:13px;">View All →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 11 -->
+          <div class="class-card reveal" style="transition-delay:.2s">
+            <div class="class-card-top" style="background:linear-gradient(135deg,#122b4a 0%,#1e4368 100%)">
+              <div class="class-card-number">11</div>
+              <div class="class-card-badge" style="background:#e76f00">Class 11</div>
+              <h3 class="class-card-title">ISC<br>Advanced</h3>
+              <p class="class-card-subtitle">ISC Curriculum</p>
+            </div>
+            <div class="class-card-body">
+              <div class="class-card-chapters">
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 1: OOP Concepts</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 2: Inheritance</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">+ 7 more chapters</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+              </div>
+              <div class="class-card-footer">
+                <span class="class-card-meta"><strong>9</strong> Chapters</span>
+                <a href="classes.html#class11" class="btn-primary" style="padding:10px 22px;font-size:13px;background:var(--accent-deep);">View All →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 12 -->
+          <div class="class-card reveal" style="transition-delay:.3s">
+            <div class="class-card-top" style="background:linear-gradient(135deg,#0d2240 0%,#122b4a 100%)">
+              <div class="class-card-number">12</div>
+              <div class="class-card-badge" style="background:#e76f00">Class 12</div>
+              <h3 class="class-card-title">ISC<br>Expert</h3>
+              <p class="class-card-subtitle">ISC Curriculum</p>
+            </div>
+            <div class="class-card-body">
+              <div class="class-card-chapters">
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 1: Data Structures</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">Ch 2: File Handling</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+                <div class="chapter-pill">
+                  <div class="chapter-pill-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                  <span class="chapter-pill-name">+ 8 more chapters</span>
+                  <span class="chapter-pill-arrow">›</span>
+                </div>
+              </div>
+              <div class="class-card-footer">
+                <span class="class-card-meta"><strong>10</strong> Chapters</span>
+                <a href="classes.html#class12" class="btn-primary" style="padding:10px 22px;font-size:13px;background:#e76f00;">View All →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lab Manual Card -->
+        <div class="neo-card reveal" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+          <div style="display:flex;align-items:center;gap:24px;">
+            <div style="width:64px;height:64px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0;">📚</div>
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">Special Resource</div>
+              <h3 style="font-size:22px;font-weight:800;color:var(--primary);margin-bottom:4px;">Lab Manual</h3>
+              <p style="font-size:14px;color:var(--text-muted);">Complete lab manual with solutions</p>
+            </div>
+          </div>
+          <a href="classes.html#lab" class="btn-primary lab-manual-btn">Open Lab Manual →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ───────────────────────────────────────── -->
+    <section class="section" style="background:var(--white)">
+      <div class="section-inner">
+        <p class="section-label text-center">Why ISC Java</p>
+        <h2 class="section-title text-center" style="margin:0 auto 16px;">Built for Real Learning</h2>
+        <p class="section-subtitle text-center" style="margin:0 auto 56px;">Everything you need to master Java, structured the way your board exam demands it.</p>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon blue">📚</div>
+            <h4 class="feature-title">Complete Syllabus</h4>
+            <p class="feature-desc">Every chapter of the ICSE &amp; ISC board syllabus covered with detailed workbook solutions and explanations.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon orange">⚡</div>
+            <h4 class="feature-title">Practice Programs</h4>
+            <p class="feature-desc">Hands-on coding exercises, solved programs, and pattern-based projects that build real coding confidence.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon green">✅</div>
+            <h4 class="feature-title">Exam Ready</h4>
+            <p class="feature-desc">Strictly aligned with the latest ISC/ICSE board examination pattern — theory, practical and lab work included.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon purple">🧠</div>
+            <h4 class="feature-title">Concept Clarity</h4>
+            <p class="feature-desc">Clear explanations of OOP, algorithms, data structures and Java syntax designed for school-level understanding.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon orange">💬</div>
+            <h4 class="feature-title">Ask Doubts</h4>
+            <p class="feature-desc">Stuck on a question? Send your doubt directly and get a personalised response from the teacher.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon blue">📰</div>
+            <h4 class="feature-title">Learning Blog</h4>
+            <p class="feature-desc">In-depth articles on Java concepts, exam tips and programming best practices written for school students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Latest Blog Posts ──────────────────────────────── -->
+    <section class="section">
+      <div class="section-inner">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:48px;flex-wrap:wrap;gap:16px;">
+          <div>
+            <p class="section-label">From the Blog</p>
+            <h2 class="section-title" style="margin-bottom:0">Latest Articles</h2>
+          </div>
+          <a href="blog.html" class="btn-outline">View All Posts →</a>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#1e3a5f,#2d5a87);">
+                <img src="assets/img/blog-1.png" alt="Blog thumbnail" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Java Basics</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">Understanding OOP in Java: A Complete Guide for Class 10 Students</a></h3>
+              <p class="blog-card-desc">Object-Oriented Programming can seem intimidating. This guide breaks it down with real-world analogies and simple code examples.</p>
+              <div class="blog-card-meta">
+                <span class="date">April 5, 2025</span>
+                <span class="read-time">8 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#f58025,#e76f00);">
+                <img src="assets/img/blog-2.png" alt="Blog thumbnail" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Loops</span>
+              <h3 class="blog-card-title"><a href="404.html">Nested Loops &amp; Pattern Programs: Master the Most Asked Exam Questions</a></h3>
+              <p class="blog-card-desc">From triangle patterns to diamond shapes — a visual walkthrough of the most popular loop-based programs in your exam.</p>
+              <div class="blog-card-meta">
+                <span class="date">March 22, 2025</span>
+                <span class="read-time">6 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-card-thumb">
+              <div class="blog-thumb-bg" style="background:linear-gradient(135deg,#122b4a,#1e4368);">
+                <img src="assets/img/blog-3.png" alt="Blog thumbnail" class="blog-thumb-img">
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">ISC Class 11</span>
+              <h3 class="blog-card-title"><a href="404.html">Arrays in Java: Single &amp; Multi-Dimensional — With Solved Programs</a></h3>
+              <p class="blog-card-desc">Arrays are fundamental. Learn how to declare, initialise and manipulate arrays with complete solved exercises.</p>
+              <div class="blog-card-meta">
+                <span class="date">March 10, 2025</span>
+                <span class="read-time">7 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ─────────────────────────────────────── -->
+    <section class="section" style="padding-top:0">
+      <div class="section-inner">
+        <div style="background:linear-gradient(135deg,var(--primary) 0%,var(--primary-mid) 100%);border-radius:32px;padding:64px 48px;text-align:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(245,128,37,.15) 0%,transparent 70%);top:-150px;right:-100px;pointer-events:none;"></div>
+          <div style="position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,.04) 0%,transparent 70%);bottom:-100px;left:50px;pointer-events:none;"></div>
+          <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;">Got a question?</p>
+          <h2 style="font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--white);margin-bottom:16px;line-height:1.15;">Don't get stuck. Ask your doubt now.</h2>
+          <p style="font-size:16px;color:rgba(255,255,255,.65);max-width:500px;margin:0 auto 36px;">Send your question directly to the teacher and get a clear, personalised answer.</p>
+          <a href="contact.html" class="btn-primary" style="font-size:16px;padding:16px 40px;">Ask a Doubt →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo nav-logo" style="margin-bottom:16px;">
+            <img src="assets/img/java-logo.png" alt="ISC Java" class="logo-icon">
+            <div class="logo-text" style="color:var(--white);">ISC <span>Java</span></div>
+          </div>
+          <p>Your complete Computer Applications companion for ICSE &amp; ISC. Quality content, structured learning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Classes</h5>
+          <ul>
+            <li><a href="classes.html#class9">Class 9</a></li>
+            <li><a href="classes.html#class10">Class 10</a></li>
+            <li><a href="classes.html#class11">Class 11</a></li>
+            <li><a href="classes.html#class12">Class 12</a></li>
+            <li><a href="classes.html#lab">Lab Manual</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Ask a Doubt</a></li>
+            <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Board</h5>
+          <ul>
+            <li><a href="/assets/pdfs/resources/ICSE_Syllabus.pdf" target="_blank">ICSE Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/ISC_Syllabus.pdf" target="_blank">ISC Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_10.pdf" target="_blank">Specimen X</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_12.pdf" target="_blank">Specimen XII</a></li>
+            <li><a href="/assets/pdfs/resources/Sample_Paper.pdf" target="_blank">Sample Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ISC Java. All rights reserved.</span>
+        <span>Made for Rishikesh Sahani Sir</span>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+
+    <!-- Floating YouTube Button -->
+    <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-float" aria-label="YouTube Channel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="rgba(255,255,255,0.9)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <span class="yt-label">YouTube</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

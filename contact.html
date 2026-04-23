@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>ISC Java | Ask a Doubt — Get Java Help</title>
+    <meta name="description" content="Stuck on a Java concept? Send your doubt directly to the teacher and get a personalised answer. For ICSE and ISC Computer Applications students." />
+    <meta name="keywords" content="ask Java doubt, Java help, ICSE Java doubt, ISC Java question, programming help, Rishikesh Sahani, contact teacher" />
+    <meta name="author" content="Rishikesh Sahani" />
+    <link rel="canonical" href="https://iscjava.online/contact.html" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iscjava.online/contact.html" />
+    <meta property="og:title" content="Ask a Doubt — ISC Java" />
+    <meta property="og:description" content="Have a Java question? Fill in the form and get a personalised response from an experienced teacher." />
+    <meta property="og:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ISC Java" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://iscjava.online/contact.html" />
+    <meta name="twitter:title" content="Ask a Doubt — ISC Java" />
+    <meta name="twitter:description" content="Get your Java doubts answered by the teacher. Send your question now." />
+    <meta name="twitter:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon for various platforms and sizes -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body class="page-transition">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-card">
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">notes</span>
+            <span class="word">projects</span>
+            <span class="word">solutions</span>
+            <span class="word">papers</span>
+            <span class="word">notes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="https://iscjava.online" class="nav-logo">
+        <img src="assets/img/java-logo.png" alt="Java logo" class="logo-icon-img">
+        <div class="logo-text">ISC <span>Java</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://iscjava.online" class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="classes.html" class="nav-link">Classes</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="nav-yt-btn" aria-label="YouTube Channel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta active">Ask a Doubt</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-nav">
+      <a href="https://iscjava.online"   class="nav-link">Home</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="blog.html"    class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link" style="color:var(--accent)">Ask a Doubt →</a>
+      <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-mobile-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px;position:relative;z-index:1;">Direct to the teacher</p>
+      <h1 style="position:relative;z-index:1;">Ask Your <a style="color: var(--accent);">Doubt</a></h1>
+      <p style="position:relative;z-index:1;">Stuck on a concept, program or exam question? Fill in the form — your message goes directly to the teacher.</p>
+    </header>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="contact-grid">
+
+          <!-- Info Column -->
+          <div class="contact-info">
+            <div style="margin-bottom:8px;">
+              <p class="section-label">Get in touch</p>
+              <h2 class="section-title" style="margin-bottom:8px;font-size:32px;">We're here<br>to help.</h2>
+              <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">No question is too small. Whether it's a conceptual doubt, a program you can't figure out or an exam topic — ask away.</p>
+            </div>
+
+            <div class="contact-info-card reveal">
+              <div class="contact-icon">📚</div>
+              <div>
+                <h4>Class 9 – 12 Doubts</h4>
+                <p>Questions on any chapter from Class 9, 10, 11 or 12 Computer Applications are welcome.</p>
+              </div>
+            </div>
+            <div class="contact-info-card reveal">
+              <div class="contact-icon">💡</div>
+              <div>
+                <h4>Program Help</h4>
+                <p>Share the question and your attempt — the teacher will guide you to the right answer.</p>
+              </div>
+            </div>
+            <div class="contact-info-card reveal">
+              <div class="contact-icon">📝</div>
+              <div>
+                <h4>Exam Preparation</h4>
+                <p>Ask about important topics, question paper patterns, or request extra practice problems.</p>
+              </div>
+            </div>
+            <div class="contact-info-card reveal">
+              <div class="contact-icon">⏱️</div>
+              <div>
+                <h4>Response Time</h4>
+                <p>Doubts are typically answered within 24–48 hours on school days.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="form-card reveal">
+            <!-- Success Message -->
+            <div id="success-message" class="success-message">
+              <div class="success-icon">✓</div>
+                <h3>Doubt Sent!</h3>
+                <p>Your message has been received. The teacher will respond within 24–48 hours. Keep studying! 📚</p>
+                <button id="reset-form" class="btn-primary" style="margin:0 auto;">Ask Another Doubt</button>
+              </div>
+
+            <!-- Form -->
+            <form id="contact-form" novalidate>
+              <h2 class="form-title">Send Your Doubt</h2>
+              <p class="form-subtitle">All fields marked <span style="color:var(--accent)">*</span> are required.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Your Name <span>*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required autocomplete="name" />
+                  <span class="form-404"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="class">Class <span>*</span></label>
+                  <select id="class" name="class" class="form-select" required>
+                    <option value="" disabled selected>Select your class</option>
+                    <option value="9">Class 9</option>
+                    <option value="10">Class 10</option>
+                    <option value="11">Class 11 (ISC)</option>
+                    <option value="12">Class 12 (ISC)</option>
+                  </select>
+                  <span class="form-404"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span>*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="yourname@example.com" required autocomplete="email" />
+                  <span class="form-404"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject / Topic <span>*</span></label>
+                <select id="subject" name="subject" class="form-select" required>
+                  <option value="" disabled selected>-- First select your class above --</option>
+                  <optgroup label="Class 9">
+                    <option value="c9-loops">Loops &amp; Iterations</option>
+                    <option value="c9-operators">Operators</option>
+                    <option value="c9-conditional">Conditional Statements</option>
+                    <option value="c9-other">Other (Class 9)</option>
+                  </optgroup>
+                  <optgroup label="Class 10">
+                    <option value="c10-classes">Classes &amp; Objects</option>
+                    <option value="c10-arrays">Arrays</option>
+                    <option value="c10-strings">Strings</option>
+                    <option value="c10-sorting">Searching &amp; Sorting</option>
+                    <option value="c10-other">Other (Class 10)</option>
+                  </optgroup>
+                  <optgroup label="Class 11">
+                    <option value="c11-oop">OOP Concepts</option>
+                    <option value="c11-inheritance">Inheritance</option>
+                    <option value="c11-exceptions">Exception Handling</option>
+                    <option value="c11-recursion">Recursion</option>
+                    <option value="c11-other">Other (Class 11)</option>
+                  </optgroup>
+                  <optgroup label="Class 12">
+                    <option value="c12-advanced-oop">Advanced OOP</option>
+                    <option value="c12-collections">Collections Framework</option>
+                    <option value="c12-gui">GUI Programming</option>
+                    <option value="c12-other">Other (Class 12)</option>
+                  </optgroup>
+                  <optgroup label="Others">
+                    <option value="exam">Exam Preparation</option>
+                    <option value="general">General Question</option>
+                  </optgroup>
+                </select>
+                <span class="form-404"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Your Doubt / Question <span>*</span></label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Describe your doubt clearly. Include the question text, what you've tried, and where you're stuck..." required></textarea>
+                <span class="form-404"></span>
+              </div>
+
+              <div style="margin-bottom:24px;display:flex;align-items:flex-start;gap:10px;">
+                <input type="checkbox" id="consent" style="margin-top:4px;accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;" />
+                <label for="consent" style="font-size:13px;color:var(--text-muted);cursor:pointer;">I understand my message will be read by the teacher to help answer my question.</label>
+              </div>
+
+              <button type="submit" class="form-submit">
+                Send Message
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left:6px; margin-bottom:-4px;">
+                  <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38Z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background:var(--white);padding-top:0">
+      <div class="section-inner">
+        <div class="divider"></div>
+        <p class="section-label text-center">Common Questions</p>
+        <h2 class="section-title text-center" style="margin:0 auto 48px;">FAQ</h2>
+        <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+          <div class="neo-card reveal" style="padding:24px 28px;">
+            <h4 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:8px;">How quickly will I get a reply?</h4>
+            <p style="font-size:14px;color:var(--text-muted);">Typically within 24–48 hours on school days. During exam season, response may be quicker. Weekends may have slightly longer delays.</p>
+          </div>
+          <div class="neo-card reveal" style="padding:24px 28px;">
+            <h4 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:8px;">Can I send a photo of my question?</h4>
+            <p style="font-size:14px;color:var(--text-muted);">Currently this form supports text only. Please type out or describe the question as clearly as possible. You can email directly for image attachments.</p>
+          </div>
+          <div class="neo-card reveal" style="padding:24px 28px;">
+            <h4 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:8px;">Is there a limit on how many doubts I can ask?</h4>
+            <p style="font-size:14px;color:var(--text-muted);">No limit — ask as many as you need. Each doubt is answered individually. Clearer questions get better, faster answers.</p>
+          </div>
+          <div class="neo-card reveal" style="padding:24px 28px;">
+            <h4 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:8px;">What if I need help with a full program?</h4>
+            <p style="font-size:14px;color:var(--text-muted);">Share the program question and explain what part is confusing. The teacher will guide you step by step rather than simply giving you the code — so that you genuinely learn.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo nav-logo" style="margin-bottom:16px;">
+            <img src="assets/img/java-logo.png" alt="ISC Java" class="logo-icon">
+            <div class="logo-text" style="color:var(--white);">ISC <span>Java</span></div>
+          </div>
+          <p>Your complete Computer Applications companion for ICSE &amp; ISC. Quality content, structured learning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Classes</h5>
+          <ul>
+            <li><a href="classes.html#class9">Class 9</a></li>
+            <li><a href="classes.html#class10">Class 10</a></li>
+            <li><a href="classes.html#class11">Class 11</a></li>
+            <li><a href="classes.html#class12">Class 12</a></li>
+            <li><a href="classes.html#lab">Lab Manual</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="https://iscjava.online">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Board</h5>
+          <ul>
+            <li><a href="/assets/pdfs/resources/ICSE_Syllabus.pdf" target="_blank">ICSE Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/ISC_Syllabus.pdf" target="_blank">ISC Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_10.pdf" target="_blank">Specimen X</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_12.pdf" target="_blank">Specimen XII</a></li>
+            <li><a href="/assets/pdfs/resources/Sample_Paper.pdf" target="_blank">Sample Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ISC Java. All rights reserved.</span>
+        <span>Made for Rishikesh Sahani Sir</span>
+      </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Floating YouTube Button -->
+    <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-float" aria-label="YouTube Channel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="rgba(255,255,255,0.9)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <span class="yt-label">YouTube</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

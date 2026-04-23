@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 
+       ISC Java - Sitemap
+       Domain: https://iscjava.online
+       Last generated: 2025-04-13
+  -->
+
+  <!-- ===== MAIN PAGES ===== -->
+  <url>
+    <loc>https://iscjava.online/index.html</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iscjava.online/about.html</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://iscjava.online/classes.html</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://iscjava.online/blog.html</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://iscjava.online/contact.html</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===== BLOG POSTS ===== -->
+  <!-- Main OOP Guide -->
+  <url>
+    <loc>https://iscjava.online/blog-post.html</loc>
+    <lastmod>2025-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-1.png</image:loc>
+      <image:title>Understanding OOP in Java</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Nested Loops Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post1.html</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-2.png</image:loc>
+      <image:title>Nested Loops &amp; Pattern Programs</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Arrays Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post2.html</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-3.png</image:loc>
+      <image:title>Arrays in Java</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Strings Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post3.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-4.png</image:loc>
+      <image:title>String Methods in Java</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Inheritance Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post4.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-5.png</image:loc>
+      <image:title>Inheritance in Java</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Exam Tips Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post5.html</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-6.png</image:loc>
+      <image:title>Board Exam Tips</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Data Types Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post6.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-7.png</image:loc>
+      <image:title>Data Types &amp; Variables</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Polymorphism Article -->
+  <url>
+    <loc>https://iscjava.online/blog-post7.html</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iscjava.online/assets/img/blog-8.png</image:loc>
+      <image:title>Polymorphism Explained</image:title>
+    </image:image>
+  </url>
+
+  <!-- Add more blog posts as you create them following the same pattern -->
+
+  <!-- ===== PDF RESOURCES (Optional - remove if you don't want them indexed) ===== -->
+  <url>
+    <loc>https://iscjava.online/assets/pdfs/class9/chapter1.pdf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://iscjava.online/assets/pdfs/class10/chapter1.pdf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://iscjava.online/assets/pdfs/class11/chapter1.pdf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://iscjava.online/assets/pdfs/class12/chapter1.pdf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://iscjava.online/assets/pdfs/resources/ICSE_Syllabus.pdf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

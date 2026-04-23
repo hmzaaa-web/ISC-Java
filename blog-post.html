@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>ISC Java | Understanding OOP in Java — A Complete Guide for Class 10</title>
+    <meta name="description" content="Object-Oriented Programming (OOP) explained simply for ICSE Class 10 students. Learn classes, objects, encapsulation, inheritance, and polymorphism with real-world examples." />
+    <meta name="keywords" content="OOP in Java, Java classes and objects, encapsulation, inheritance, polymorphism, ICSE Class 10 Java, Java OOP guide, Rishikesh Sahani" />
+    <meta name="author" content="Rishikesh Sahani" />
+    <link rel="canonical" href="https://iscjava.online/blog-post.html" />
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://iscjava.online/blog-post.html" />
+    <meta property="og:title" content="Understanding OOP in Java: A Complete Guide for Class 10 Students" />
+    <meta property="og:description" content="Object-Oriented Programming can seem intimidating. This guide breaks it down with real-world analogies and simple code examples." />
+    <meta property="og:image" content="https://iscjava.online/assets/img/blog-1.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ISC Java" />
+    <meta property="article:published_time" content="2025-04-05T08:00:00+05:30" />
+    <meta property="article:author" content="Rishikesh Sahani" />
+    <meta property="article:tag" content="Java Basics" />
+    <meta property="article:tag" content="OOP" />
+    <meta property="article:tag" content="Class 10" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://iscjava.online/blog-post.html" />
+    <meta name="twitter:title" content="Understanding OOP in Java — A Complete Guide for Class 10" />
+    <meta name="twitter:description" content="Classes, objects, encapsulation, inheritance, and polymorphism made easy. Read the full guide." />
+    <meta name="twitter:image" content="https://iscjava.online/assets/img/blog-1.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon for various platforms and sizes -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body class="page-transition">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-card">
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">notes</span>
+            <span class="word">projects</span>
+            <span class="word">solutions</span>
+            <span class="word">papers</span>
+            <span class="word">notes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="https://iscjava.online" class="nav-logo">
+        <img src="assets/img/java-logo.png" alt="Java logo" class="logo-icon-img">
+        <div class="logo-text">ISC <span>Java</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://iscjava.online"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="classes.html" class="nav-link">Classes</a></li>
+        <li><a href="blog.html"    class="nav-link active">Blog</a></li>
+        <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="nav-yt-btn" aria-label="YouTube Channel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Ask a Doubt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-nav">
+      <a href="https://iscjava.online"   class="nav-link">Home</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="blog.html"    class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link" style="color:var(--accent)">Ask a Doubt →</a>
+      <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-mobile-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+
+    <!-- Blog Hero -->
+    <header class="blog-hero-sm">
+      <div style="position:relative;z-index:1;">
+        <div class="blog-hero-tag"><span class="blog-tag">Java Basics</span></div>
+        <h1 style="font-size:clamp(28px, 4vw, 50px); font-weight:800; color:var(--white); line-height:1.15;">Understanding OOP in Java:<br>A Complete Guide for Class 10 Students</h1>
+        <div class="blog-hero-meta" style="display:flex; align-items:center; justify-content:center; gap:20px; color:rgba(255,255,255,.6); font-size:13px; margin-top:20px;">
+          <span>April 5, 2025</span>
+          <span>·</span>
+          <span>8 min read</span>
+          <span>·</span>
+          <span>ICSE Class 10</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article -->
+    <article class="blog-article">
+
+      <div class="author-card">
+        <div class="author-avatar">
+          <img src="assets/img/sir.png" alt="ISC Java Teacher">
+        </div>
+        <div class="author-info">
+          <h5>Rishikesh Shahani</h5>
+          <p>Computer Applications · ICSE &amp; ISC Board</p>
+        </div>
+      </div>
+
+      <p>Object-Oriented Programming (OOP) is the backbone of Java. Once you understand it, everything else in Java falls into place naturally. This guide walks through all four pillars of OOP — using simple, real-world analogies that make sense to a school student.</p>
+
+      <div class="toc-card">
+        <h4>In this article</h4>
+        <ol>
+          <li><a href="#what-is-oop">What is OOP?</a></li>
+          <li><a href="#class-object">Classes and Objects</a></li>
+          <li><a href="#encapsulation">Encapsulation</a></li>
+          <li><a href="#inheritance">Inheritance</a></li>
+          <li><a href="#polymorphism">Polymorphism</a></li>
+          <li><a href="#exam-tips">Exam Tips</a></li>
+        </ol>
+      </div>
+
+      <h2 id="what-is-oop">What is OOP?</h2>
+      <p>Object-Oriented Programming is a programming paradigm built around <strong>objects</strong>. Instead of writing a long list of instructions (procedural programming), OOP organises code into self-contained units — objects — that have both <em>data</em> (properties) and <em>behaviour</em> (methods).</p>
+
+      <div class="callout">
+        <strong>Think of it this way:</strong> A car is an object. It has properties (colour, brand, speed) and behaviours (accelerate, brake, turn). In Java, a <code>Car</code> class is the blueprint; each actual car you create is an object.
+      </div>
+
+      <h2 id="class-object">Classes and Objects</h2>
+      <p>A <strong>class</strong> is a template or blueprint. An <strong>object</strong> is an instance of that class — a real, in-memory entity created from the blueprint.</p>
+
+      <pre><code><span style="color:#c792ea">public class</span> <span style="color:#ffcb6b">Car</span> {
+      <span style="color:#c792ea">String</span> color;
+      <span style="color:#c792ea">int</span>    speed;
+
+      <span style="color:#c792ea">void</span> <span style="color:#82aaff">accelerate</span>() {
+      speed += <span style="color:#f78c6c">10</span>;
+      System.out.<span style="color:#82aaff">println</span>(<span style="color:#c3e88d">"Speed: "</span> + speed);
+      }
+      }
+      <span style="color:#546e7a">// Creating objects</span>
+      Car myCar  = <span style="color:#c792ea">new</span> Car();
+      Car herCar = <span style="color:#c792ea">new</span> Car();</code></pre>
+
+      <p>Here, <code>myCar</code> and <code>herCar</code> are two distinct objects, each with their own <code>color</code> and <code>speed</code> values, even though they come from the same <code>Car</code> class.</p>
+
+      <h2 id="encapsulation">Encapsulation</h2>
+      <p>Encapsulation means bundling data and the methods that operate on it into a single unit (the class), and <em>hiding</em> the internal details from the outside world using access modifiers like <code>private</code>.</p>
+
+      <pre>
+        <code>
+          <span style="color:#c792ea">public class</span> <span style="color:#ffcb6b">BankAccount</span> {
+          <span style="color:#c792ea">private double</span> balance; <span style="color:#546e7a">// hidden from outside</span>
+
+          <span style="color:#c792ea">public void</span> <span style="color:#82aaff">deposit</span>(<span style="color:#c792ea">double</span> amount) {
+          <span style="color:#c792ea">if</span>(amount > <span style="color:#f78c6c">0</span>) balance += amount;
+          }
+          <span style="color:#c792ea">public double</span> <span style="color:#82aaff">getBalance</span>() {
+          <span style="color:#c792ea">return</span> balance;
+          }
+          }
+        </code>
+      </pre>
+
+      <blockquote>Encapsulation is the principle of "need to know" — the outside world only sees what it needs to. Implementation details stay private.</blockquote>
+
+      <h2 id="inheritance">Inheritance</h2>
+      <p>Inheritance allows a new class (child) to acquire properties and methods of an existing class (parent). This promotes code reuse and creates an <em>is-a</em> relationship.</p>
+
+      <pre>
+        <code>
+          <span style="color:#c792ea">class</span> <span style="color:#ffcb6b">Animal</span> {
+          <span style="color:#c792ea">void</span> <span style="color:#82aaff">eat</span>() { System.out.<span style="color:#82aaff">println</span>(<span style="color:#c3e88d">"Eating..."</span>); }
+          }
+
+          <span style="color:#c792ea">class</span> <span style="color:#ffcb6b">Dog</span> <span style="color:#c792ea">extends</span> <span style="color:#ffcb6b">Animal</span> {
+          <span style="color:#c792ea">void</span> <span style="color:#82aaff">bark</span>() { System.out.<span style="color:#82aaff">println</span>(<span style="color:#c3e88d">"Woof!"</span>); }
+          }
+
+          Dog d = <span style="color:#c792ea">new</span> Dog();
+          d.<span style="color:#82aaff">eat</span>();  <span style="color:#546e7a">// inherited from Animal</span>
+          d.<span style="color:#82aaff">bark</span>(); <span style="color:#546e7a">// Dog's own method</span>
+        </code>
+      </pre>
+
+      <h2 id="polymorphism">Polymorphism</h2>
+      <p>Polymorphism means "many forms". In Java, the same method name can behave differently depending on the object or context. There are two types:</p>
+      <ul>
+        <li><strong>Compile-time polymorphism</strong> — achieved through method overloading (same method name, different parameters).</li>
+        <li><strong>Runtime polymorphism</strong> — achieved through method overriding (child class redefines a parent class method).</li>
+      </ul>
+
+      <h3 id="exam-tips">🎯 Exam Tips</h3>
+      <ul>
+        <li>Always define access modifiers — examiners look for <code>private</code> on data members.</li>
+        <li>Remember: a <em>constructor</em> has the same name as the class and no return type.</li>
+        <li>Draw a UML-style box diagram if you get a class-design question — it earns presentation marks.</li>
+        <li>Method overloading ≠ method overriding. Know the difference clearly.</li>
+      </ul>
+
+      <!-- Share Bar -->
+      <div class="share-bar">
+        <span>Share:</span>
+        <!-- Copy Link -->
+        <button class="share-btn" id="copyLinkBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;" style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Copy Link
+        </button>
+        <!-- WhatsApp -->
+        <a href="#" class="share-btn" id="whatsappShareBtn">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" style="margin-right:6px;" style="margin-bottom: -5px;" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.953 9.953 0 0 1-5.03-1.355L.004 20l1.352-4.968A9.953 9.953 0 0 1 0 10C0 4.477 4.477 0 10 0ZM6.592 5.3l-.2.008a.961.961 0 0 0-.372.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306a2.73 2.73 0 0 0-.566 1.678c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.97 2.742.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.131-.067.259-.14.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13 1.432 1.432 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.028 6.028 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.298 6.298 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249a4.439 4.439 0 0 0-.162-.016 3.385 3.385 0 0 0-.403.004l.201-.008.001.001Z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <!-- Email -->
+        <a href="#" class="share-btn" id="emailShareBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px; margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+      </div>
+
+      <!-- Related Posts -->
+      <div>
+        <h3 style="font-size:20px;font-weight:800;color:var(--primary);margin-bottom:10px;">Related Articles</h3>
+      </div>
+    </article>
+
+    <div class="related-container">
+      <div class="related-grid">
+        <div class="blog-card reveal">
+          <div class="blog-card-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">
+            <img src="assets/img/blog-5.png" alt="Polymorphism Icon" style="width:fit-content; height:fit-content;">
+          </div></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">ISC Class 11</span>
+            <h3 class="blog-card-title"><a href="404.html">Inheritance in Java: super, extends and Method Overriding</a></h3>
+            <div class="blog-card-meta"><span class="date">Feb 15, 2025</span><span class="read-time">9 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-card-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,#f58025,#e76f00)">
+            <img src="assets/img/blog-2.png" alt="Loops Icon" style="width:fit-content; height:fit-content;">
+          </div></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Loops</span>
+            <h3 class="blog-card-title"><a href="404.html">Nested Loops &amp; Pattern Programs</a></h3>
+            <div class="blog-card-meta"><span class="date">March 22, 2025</span><span class="read-time">6 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-card-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,#122b4a,#1e4368)">
+            <img src="assets/img/blog-3.png" alt="Arrays Icon" style="width:fit-content;height:fit-content;">
+          </div></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Arrays</span>
+            <h3 class="blog-card-title"><a href="404.html">Arrays in Java: Complete Guide</a></h3>
+            <div class="blog-card-meta"><span class="date">March 10, 2025</span><span class="read-time">7 min read</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo nav-logo" style="margin-bottom:16px;">
+            <img src="assets/img/java-logo.png" alt="ISC Java" class="logo-icon">
+            <div class="logo-text" style="color:var(--white);">ISC <span>Java</span></div>
+          </div>
+          <p>Your complete Computer Applications companion for ICSE &amp; ISC. Quality content, structured learning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Classes</h5>
+          <ul>
+            <li><a href="classes.html#class9">Class 9</a></li>
+            <li><a href="classes.html#class10">Class 10</a></li>
+            <li><a href="classes.html#class11">Class 11</a></li>
+            <li><a href="classes.html#class12">Class 12</a></li>
+            <li><a href="classes.html#lab">Lab Manual</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="https://iscjava.online">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Ask a Doubt</a></li>
+            <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Board</h5>
+          <ul>
+            <li><a href="/assets/pdfs/resources/ICSE_Syllabus.pdf" target="_blank" >ICSE Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/ISC_Syllabus.pdf" target="_blank" >ISC Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_10.pdf" target="_blank" >Specimen X</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_12.pdf" target="_blank" >Specimen XII</a></li>
+            <li><a href="/assets/pdfs/resources/Sample_Paper.pdf" target="_blank" >Sample Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ISC Java. All rights reserved.</span>
+        <span>Made for Rishikesh Sahani Sir</span>
+      </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+
+    <!-- Floating YouTube Button -->
+    <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-float" aria-label="YouTube Channel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="rgba(255,255,255,0.9)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <span class="yt-label">YouTube</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

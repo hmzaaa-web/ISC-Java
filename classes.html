@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>ISC Java | Classes 9–12 — Workbook Solutions & Notes</title>
+    <meta name="description" content="Browse complete chapter-wise workbook solutions, downloadable PDFs, and notes for Class 9, 10, 11, and 12 Computer Applications (ICSE & ISC)." />
+    <meta name="keywords" content="Class 9 Java solutions, Class 10 ICSE Java, Class 11 ISC Java, Class 12 ISC Java, Java workbook PDF, Java chapter notes, ICSE Computer Applications, ISC Computer Science, Java lab manual" />
+    <meta name="author" content="Rishikesh Sahani" />
+    <link rel="canonical" href="https://iscjava.online/classes.html" />
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iscjava.online/classes.html" />
+    <meta property="og:title" content="All Classes & Chapters — ISC Java" />
+    <meta property="og:description" content="Chapter-wise workbook solutions, notes and downloadable PDFs for ICSE Class 9-10 and ISC Class 11-12 Computer Applications." />
+    <meta property="og:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ISC Java" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://iscjava.online/classes.html" />
+    <meta name="twitter:title" content="Classes 9–12 — ISC Java" />
+    <meta name="twitter:description" content="Find workbook solutions, chapter notes, and PDF downloads for every class. Structured for ICSE/ISC syllabus." />
+    <meta name="twitter:image" content="https://iscjava.online/assets/img/og-image.jpg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Favicon links for various devices and platforms -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body class="page-transition">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-card">
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">notes</span>
+            <span class="word">projects</span>
+            <span class="word">solutions</span>
+            <span class="word">papers</span>
+            <span class="word">notes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="https://iscjava.online" class="nav-logo">
+        <img src="assets/img/java-logo.png" alt="Java logo" class="logo-icon-img">
+        <div class="logo-text">ISC <span>Java</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://iscjava.online"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="classes.html" class="nav-link active">Classes</a></li>
+        <li><a href="blog.html"    class="nav-link">Blog</a></li>
+        <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="nav-yt-btn" aria-label="YouTube Channel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Ask a Doubt</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-nav">
+      <a href="https://iscjava.online"   class="nav-link">Home</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="blog.html"    class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link" style="color:var(--accent)">Ask a Doubt →</a>
+      <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-mobile-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Watch on YouTube
+      </a>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px;position:relative;z-index:1;">ICSE &amp; ISC Board</p>
+      <h1 style="position:relative;z-index:1;">All Classes &amp; Chapters</h1>
+      <p style="position:relative;z-index:1;">Browse every chapter's workbook solutions, notes and downloadable PDFs — organized by class.</p>
+    </header>
+
+    <!-- Chapters Section with Tabs -->
+    <section class="section">
+      <div class="section-inner">
+
+        <!-- Tabs (scrollable on mobile) -->
+        <div class="class-tabs" role="tablist">
+          <button class="class-tab active" data-target="panel-9" role="tab" aria-selected="true">Class 9</button>
+          <button class="class-tab" data-target="panel-10" role="tab">Class 10</button>
+          <button class="class-tab" data-target="panel-11" role="tab">Class 11 (ISC)</button>
+          <button class="class-tab" data-target="panel-12" role="tab">Class 12 (ISC)</button>
+          <button class="class-tab" data-target="panel-lab" role="tab">Lab Manual</button>
+        </div>
+
+        <!-- Class 9 Panel -->
+        <div id="panel-9" class="class-panel chapters-grid" style="display:grid;">
+          <!-- Card 1 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">1</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 01</div>
+                <div class="chapter-card-name">Introduction to Java</div>
+                <div class="chapter-card-desc">History, features, JVM, JDK, JRE and your first Java program.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter1.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter1.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">2</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 02</div>
+                <div class="chapter-card-name">Elementary Concepts</div>
+                <div class="chapter-card-desc">Tokens, identifiers, keywords, literals and basic syntax rules.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter2.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter2.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">3</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 03</div>
+                <div class="chapter-card-name">Values &amp; Data Types</div>
+                <div class="chapter-card-desc">Primitive types, type casting, variables and constant declarations.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter3.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter3.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">4</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 04</div>
+                <div class="chapter-card-name">Operators in Java</div>
+                <div class="chapter-card-desc">Arithmetic, relational, logical, bitwise, assignment and ternary operators.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter4.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter4.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">5</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 05</div>
+                <div class="chapter-card-name">Input in Java</div>
+                <div class="chapter-card-desc">Scanner class, BufferedReader, reading different data types from user.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter5.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter5.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">6</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 06</div>
+                <div class="chapter-card-name">Mathematical Library</div>
+                <div class="chapter-card-desc">Math class methods: abs(), pow(), sqrt(), ceil(), floor(), round() and more.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter6.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter6.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">7</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 07</div>
+                <div class="chapter-card-name">Conditional Statements</div>
+                <div class="chapter-card-desc">if, if-else, if-else-if ladder, nested if, switch-case with solved problems.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter7.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter7.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">8</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 08</div>
+                <div class="chapter-card-name">Iterative Statements</div>
+                <div class="chapter-card-desc">for, while, do-while loops with trace tables and example programs.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter8.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter8.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">9</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 09</div>
+                <div class="chapter-card-name">Nested Loops</div>
+                <div class="chapter-card-desc">Loops within loops — patterns, multiplication tables and series problems.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter9.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter9.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon">10</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 10</div>
+                <div class="chapter-card-name">Series Programs</div>
+                <div class="chapter-card-desc">Fibonacci, factorial, prime, Armstrong, perfect number series programs.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class9/chapter10.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class9/chapter10.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 10 Panel -->
+        <div id="panel-10" class="class-panel chapters-grid" style="display:none;">
+          <!-- Card 1 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">1</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 01</div>
+                <div class="chapter-card-name">Classes in Java</div>
+                <div class="chapter-card-desc">Class definition, objects, constructors, methods and instance variables.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter1.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter1.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">2</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 02</div>
+                <div class="chapter-card-name">Functions / Methods</div>
+                <div class="chapter-card-desc">Method overloading, passing arguments, return types and call by value.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter2.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter2.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">3</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 03</div>
+                <div class="chapter-card-name">Arrays</div>
+                <div class="chapter-card-desc">Single-dimensional arrays — declaration, initialisation, traversal and sorting.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter3.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter3.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">4</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 04</div>
+                <div class="chapter-card-name">Strings in Java</div>
+                <div class="chapter-card-desc">String class methods, StringBuilder, character extraction and string programs.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter4.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter4.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">5</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 05</div>
+                <div class="chapter-card-name">Searching &amp; Sorting</div>
+                <div class="chapter-card-desc">Linear search, binary search, bubble sort, selection sort with tracing.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter5.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter5.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#1a3d6b,#2a5580)">6</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 06</div>
+                <div class="chapter-card-name">Wrapper Classes</div>
+                <div class="chapter-card-desc">Integer, Character, Double wrapper classes and their utility methods.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class10/chapter6.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class10/chapter6.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 11 Panel -->
+        <div id="panel-11" class="class-panel chapters-grid" style="display:none;">
+          <!-- Card 1 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">1</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 01</div>
+                <div class="chapter-card-name">OOP Concepts</div>
+                <div class="chapter-card-desc">Encapsulation, abstraction, polymorphism and the four pillars of OOP.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter1.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter1.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">2</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 02</div>
+                <div class="chapter-card-name">Inheritance</div>
+                <div class="chapter-card-desc">Single, multilevel and hierarchical inheritance with super and override.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter2.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter2.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">3</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 03</div>
+                <div class="chapter-card-name">Interfaces &amp; Abstract Classes</div>
+                <div class="chapter-card-desc">Abstract methods, interface implementation, multiple interfaces.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter3.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter3.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">4</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 04</div>
+                <div class="chapter-card-name">2D Arrays</div>
+                <div class="chapter-card-desc">Declaring and traversing 2D arrays, matrix operations and programs.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter4.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter4.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">5</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 05</div>
+                <div class="chapter-card-name">Exception Handling</div>
+                <div class="chapter-card-desc">try-catch-finally, throws, custom exceptions and common runtime 404s.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter5.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter5.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#122b4a,#1e4368)">6</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 06</div>
+                <div class="chapter-card-name">Recursion</div>
+                <div class="chapter-card-desc">Recursive methods, base cases, stack behaviour and classic recursion problems.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class11/chapter6.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class11/chapter6.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 12 Panel -->
+        <div id="panel-12" class="class-panel chapters-grid" style="display:none;">
+          <!-- Card 1 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">1</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 01</div>
+                <div class="chapter-card-name">Data Structures</div>
+                <div class="chapter-card-desc">Introduction to stacks, queues, linked lists and their implementations.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter1.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter1.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">2</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 02</div>
+                <div class="chapter-card-name">File Handling</div>
+                <div class="chapter-card-desc">Reading and writing text files using FileReader, FileWriter, BufferedReader.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter2.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter2.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">3</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 03</div>
+                <div class="chapter-card-name">Collections Framework</div>
+                <div class="chapter-card-desc">ArrayList, LinkedList, HashMap, HashSet and iterators.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter3.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter3.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">4</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 04</div>
+                <div class="chapter-card-name">Multithreading</div>
+                <div class="chapter-card-desc">Thread class, Runnable interface, synchronization and thread life cycle.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter4.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter4.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">5</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 05</div>
+                <div class="chapter-card-name">JDBC</div>
+                <div class="chapter-card-desc">Connecting Java applications to databases, executing queries and result sets.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter5.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter5.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,#0d2240,#122b4a)">6</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Chapter 06</div>
+                <div class="chapter-card-name">GUI Programming</div>
+                <div class="chapter-card-desc">Introduction to Swing: JFrame, JButton, JLabel, event handling basics.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/class12/chapter6.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/class12/chapter6.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lab Manual Panel -->
+        <div id="panel-lab" class="class-panel chapters-grid" style="display:none;">
+          <!-- Card 1 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-deep))">9th</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Lab Manual 9th</div>
+                <div class="chapter-card-name">Basic Java Programs</div>
+                <div class="chapter-card-desc">Simple I/O, arithmetic operations, swapping and type conversion programs.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/labManual/chapter1.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/labManual/chapter1.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-deep))">10th</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Lab Manual 10th</div>
+                <div class="chapter-card-name">Control Structures Lab</div>
+                <div class="chapter-card-desc">Decision-making and loop programs: leap year, number check, patterns.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/labManual/chapter2.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/labManual/chapter2.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="chapter-card reveal">
+            <div class="chapter-card-top">
+              <div class="chapter-card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-deep))">11th</div>
+              <div class="chapter-card-content">
+                <div class="chapter-card-num">Lab Manual 11th</div>
+                <div class="chapter-card-name">OOP Lab Programs</div>
+                <div class="chapter-card-desc">Class-based programs, constructor overloading, method exercises.</div>
+              </div>
+            </div>
+            <div class="chapter-card-actions">
+              <a href="/assets/pdfs/labManual/chapter3.pdf" target="_blank" class="chapter-btn primary"><span>📄</span> View PDF</a>
+              <a href="/assets/pdfs/labManual/chapter3.pdf" download class="chapter-btn outline"><span>⬇</span> Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo nav-logo" style="margin-bottom:16px;">
+            <img src="assets/img/java-logo.png" alt="ISC Java" class="logo-icon">
+            <div class="logo-text" style="color:var(--white);">ISC <span>Java</span></div>
+          </div>
+          <p>Your complete Computer Applications companion for ICSE &amp; ISC. Quality content, structured learning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Classes</h5>
+          <ul>
+            <li><a href="classes.html#class9">Class 9</a></li>
+            <li><a href="classes.html#class10">Class 10</a></li>
+            <li><a href="classes.html#class11">Class 11</a></li>
+            <li><a href="classes.html#class12">Class 12</a></li>
+            <li><a href="classes.html#lab">Lab Manual</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="https://iscjava.online">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Ask a Doubt</a></li>
+            <li><a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Board</h5>
+          <ul>
+            <li><a href="/assets/pdfs/resources/ICSE_Syllabus.pdf" target="_blank">ICSE Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/ISC_Syllabus.pdf" target="_blank">ISC Syllabus</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_10.pdf" target="_blank">Specimen X</a></li>
+            <li><a href="/assets/pdfs/resources/Specimen_12.pdf" target="_blank">Specimen XII</a></li>
+            <li><a href="/assets/pdfs/resources/Sample_Paper.pdf" target="_blank">Sample Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ISC Java. All rights reserved.</span>
+        <span>Made for Rishikesh Sahani Sir</span>
+      </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Floating YouTube Button -->
+    <a href="https://www.youtube.com/@discover108/featured" target="_blank" rel="noopener" class="yt-float" aria-label="YouTube Channel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="rgba(255,255,255,0.9)" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <span class="yt-label">YouTube</span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -32,8 +32,8 @@ export function middleware(request) {
   const protectedExtensions = /\.(jpg|jpeg|png|gif|webp|avif|svg|ico|bmp|tiff)$/i;
   if (protectedExtensions.test(url.pathname)) {
     const allowedReferers = [
-      'iscjava.online',
-      'www.iscjava.online',
+      'iscjava.vercel.app',
+      'www.iscjava.vercel.app',
       'localhost'
     ];
 

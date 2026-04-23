@@ -1,12 +1,12 @@
 # ISC Java - Robots Exclusion File
-# https://iscjava.online/robots.txt
+# https://iscjava.vercel.app/robots.txt
 # Last updated: 2025-04-13
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://iscjava.online/sitemap.xml
+Sitemap: https://iscjava.vercel.app/sitemap.xml
 
 # Crawl-delay (optional; adjust if server load becomes an issue)
 # Crawl-delay: 5

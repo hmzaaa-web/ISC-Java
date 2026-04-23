@@ -23,10 +23,10 @@
       "has": [
         {
           "type": "host",
-          "value": "iscjava.online"
+          "value": "iscjava.vercel.app"
         }
       ],
-      "destination": "https://www.iscjava.online/:path*",
+      "destination": "https://www.iscjava.vercel.app/:path*",
       "permanent": true
     }
   ],

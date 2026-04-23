@@ -56,13 +56,13 @@ export function middleware(request) {
   // ---------------------------------------------------------------
   // 3. Block suspicious query parameters (prevent forced downloads)
   // ---------------------------------------------------------------
-  const queryString = url.search.toLowerCase();
-  const blockedQueryParams = ['download', 'save', 'get', 'dl', 'zip', 'tar', 'gz'];
-  const sensitiveExt = /\.(html|css|js|jpg|jpeg|png|gif|pdf|doc|docx)$/i;
+  // const queryString = url.search.toLowerCase();
+  // const blockedQueryParams = ['download', 'save', 'get', 'dl', 'zip', 'tar', 'gz'];
+  // const sensitiveExt = /\.(html|css|js|jpg|jpeg|png|gif|pdf|doc|docx)$/i;
 
-  if (blockedQueryParams.some(param => queryString.includes(param)) && sensitiveExt.test(url.pathname)) {
-    return new Response('Access Denied', { status: 403 });
-  }
+  // if (blockedQueryParams.some(param => queryString.includes(param)) && sensitiveExt.test(url.pathname)) {
+  //   return new Response('Access Denied', { status: 403 });
+  // }
 
   // Allow the request to proceed normally
   return new Response(null, {
